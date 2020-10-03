@@ -1,5 +1,5 @@
 variable "region" {
-  default = "us-west-2"
+  default = "cn-northwest-1"
 }
 
 variable "map_accounts" {
@@ -7,9 +7,8 @@ variable "map_accounts" {
   type        = list(string)
 
   default = [
-    "777777777777",
-    "888888888888",
-  ]
+    "326449571384",
+     ]
 }
 
 variable "map_roles" {
@@ -22,8 +21,8 @@ variable "map_roles" {
 
   default = [
     {
-      rolearn  = "arn:aws:iam::66666666666:role/role1"
-      username = "role1"
+      rolearn  = "arn:aws-cn:iam::326449571384:role/admin"
+      username = "admin"
       groups   = ["system:masters"]
     },
   ]
@@ -39,14 +38,9 @@ variable "map_users" {
 
   default = [
     {
-      userarn  = "arn:aws:iam::66666666666:user/user1"
-      username = "user1"
+      userarn  = "arn:aws-cn:iam::326449571384:user/jinsong1"
+      username = "jinsong1"
       groups   = ["system:masters"]
     },
-    {
-      userarn  = "arn:aws:iam::66666666666:user/user2"
-      username = "user2"
-      groups   = ["system:masters"]
-    },
-  ]
+    ]
 }
